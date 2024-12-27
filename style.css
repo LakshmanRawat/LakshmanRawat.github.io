@@ -58,3 +58,29 @@ footer {
   background: #f4f4f4;
   margin-top: 20px;
 }
+.top-nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.top-nav .nav-links {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+}
+
+.top-nav .nav-links li {
+  margin: 0 15px;
+}
+
+.top-nav .nav-links a {
+  text-decoration: none;
+  color: #007acc; /* Ensure visible color */
+  font-weight: bold;
+  font-size: 18px; /* Increase size for readability */
+  transition: color 0.3s; /* Add hover effect */
+}
+
+.top-nav .nav-links a:hover {
+  color: #005b99; /* Darker shade on hover */
+}
