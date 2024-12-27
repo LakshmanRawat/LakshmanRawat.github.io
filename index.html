@@ -29,6 +29,7 @@
         <h2>About Me</h2>
         <p>Hello! I'm Laxman Singh, a passionate Data Engineer with a love for open-source tools and technologies. With expertise in SQL, Python, and dbt, I specialize in building scalable data pipelines and designing efficient data models to drive insightful analytics.</p>
         <p>I'm always exploring new ways to solve complex problems and deliver impactful solutions.</p>
+        <button id="about-more">Learn More</button>
       </div>
     </section>
     <section id="projects" class="section">
@@ -54,8 +55,9 @@
         <ul class="contact-info">
           <li>Email: <a href="mailto:Laxmansingh2501@gmail.com">Laxmansingh2501@gmail.com</a></li>
           <li>LinkedIn: <a href="https://www.linkedin.com/in/laxman25/" target="_blank">linkedin.com/in/laxman25</a></li>
-          <li>GitHub: <a href="https://github.com/LakshmanRawat" target="_blank">github.com/yourusername</a></li>
+          <li>GitHub: <a href="https://github.com/LakshmanRawat" target="_blank">github.com/LakshmanRawat</a></li>
         </ul>
+        <button id="contact-more">Get in Touch</button>
       </div>
     </section>
   </main>
@@ -66,5 +68,25 @@
     </div>
   </footer>
   <script src="script.js"></script>
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        document.querySelector(event.target.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Interactive buttons
+    document.getElementById('about-more').addEventListener('click', () => {
+      alert('I have over 5 years of experience in data engineering, working with clients across industries to create data-driven solutions.');
+    });
+
+    document.getElementById('contact-more').addEventListener('click', () => {
+      alert('Let's collaborate! Send me an email or connect with me on LinkedIn.');
+    });
+  </script>
 </body>
 </html>
